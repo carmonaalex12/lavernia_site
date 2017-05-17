@@ -1,0 +1,31 @@
+sup, sub{
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+sub{
+	top: 0.4em;
+}
+body{
+	font-family: Tahoma;
+}
+h1{
+	font-size: 36px;
+	color: white;
+}
+a:visited{
+	text-decoration: none;
+	color: #335379;
+}
+a:link{
+	text-decoration: underline;
+	color: #002855;
+}
+a:hover{
+	text-decoration: none;
+	color: #DAA000
+}
+body{
+	font-family: Tahoma;
+}
