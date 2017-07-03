@@ -30,4 +30,10 @@ from django.contrib.auth.models import User
 class IndexView(TemplateView):
     template_name = 'main/index.html'
     def post(self, request, *args, **kwargs):
-        render(request, template, {}) 
+        render(request, template, {})
+
+class PeopleView(TemplateView):
+    template_name = 'main/people.html'
+    def post(self, request, *args, **kwargs):
+        render(request, template, {})
+        

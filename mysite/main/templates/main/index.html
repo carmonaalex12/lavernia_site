@@ -2,13 +2,19 @@
 
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 <head><title>Enrique Lavernia Lab at UC Irvine</title>
+
 <a name="Top">
 <div id="banner">
 	<div id="banner-content">
-		<a href="/" class= "name_link" style="color: #FFFFFF; text-decoration: none;">E</a><a href="/" class= "name_link" style="color: #FFFFFF; text-decoration: none;">nrique Lavernia Lab at UC Irvine</a>
+		<a href="/" class= "name_link" style=" color: #2E5990; font-weight: bold;font-family: 'Raleway', sans-serif; text-decoration: none;">E</a><a href="/" class= "name_link" style="color: #2E5990;font-weight: bold;font-family: 'Raleway', sans-serif;  text-decoration: none;">nrique Lavernia Lab at UC Irvine</a>
 	 	<a href="http://engineering.uci.edu/dept/chems"><img id="banner-image" href="/"
+	  	src="{% static '/images/lavernia1.png' %}"></a>
+	  	<a href="http://engineering.uci.edu/dept/chems"><img id="banner-image2" href="/"
 	  	src="{% static '/images/samueli-logo.png' %}"></a>
 	</div>
 </div>
@@ -16,7 +22,7 @@
 <ul>
 	<li class='active'><a href='/'><span>Home</span></a></li>
 	<li> <a href="/research"><span>Research</span></a></li>
-	<li><a href="/people"><span>Facilities</span></a></li>
+	<li><a href="/people"><span>People</span></a></li>
 	<li><a href="/publications"><span>Publications</span></a></li>
 	<li><a href="/gallery"><span>Gallery</span></a></li>
 	<li><a href="/contact"><span>Contact</span></a></li>
@@ -25,30 +31,53 @@
 
 
 
-</head>
 
 <body>
+	<div class="w3-content w3-section" style = "max-width: 800px">
+		
+		<img class= "slides" src="{% static '/images/Researchcapabilities.png' %}" style = "width: 100%">
+		<img class= "slides" src="{% static '/images/Cryomilling.png' %}" style = "width: 100%">
+		<img class= "slides" src="{% static '/images/consolidation.png' %}" style = "width: 100%">
+		<img class= "slides" src="{% static '/images/additivemanufacturing.png' %}" style = "width: 100%">
+	</div>
+	
 
+	<script> 
+	var slideIndex = 0;
+	carousel();
 
+	function carousel()
+	{
+		var i;
+		var x = document.getElementsByClassName("slides");
+		for(i = 0; i < x.length; i++)
+		{
+			x[i].style.display = 'none';
+		}
+		slideIndex++;
+		if(slideIndex > x.length)
+		{
+			slideIndex=1;
+		}
+		x[slideIndex-1].style.display = "block";
+		setTimeout(carousel, 5000);//change every five seconds
+
+	}
+
+	</script>
 
 <p id="name">
 <br>
 <br>
 <br>
 <br>
-
-Directed by Provost Enrique Lavernia, the Lavernia Research Group studies a 
-variety of novel materials processing approaches.
+<div>
+<header><h1 id= "header">About</h1></header>
+<p id = "intro">Metallurgy is the principle study of the Lavernia research group. Research interests include the synthesis and behavior of nanostructured and multi-scale materials with particular emphasis on processing fundamentals and physical behavior; thermal spray processing of nanostructured materials; spray atomization and deposition of structural materials; high temperature-high pressure atomization processes; and mathematical modeling of advanced materials and processes. Visit the research page for more information on current projects.</p>
 <br>
-<ul>
-	<li> Elucidating the fundamental mechanisms that govern the mechanical
-	respons of advanced materials</li>
-	<br>
-	<li>All Whilst considering the relationship between materials processing,
-	phases/microstructure, and mechanical performance</li>
-	<br>
+
 </ul>
 </p>
-
+</div>
 </body>
 </html>
