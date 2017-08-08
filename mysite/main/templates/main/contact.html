@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<head><title>Enrique Lavernia Lab at UC Irvine</title>
+
+{% include 'main/header.html' %}
+<body>
+	<H1 style = "color: #2E5990; text-decoration: underline;"><b>Contact</b></H1>
+	<div class= "w3 container" style="margin-right: 200px; margin-left: 200px; margin: 0 auto;">
+		    <div class ="w3-display-container w3-primroseyellow" style="height: 100%; width:100%; min-width:480px ">
+			    <div class = "w3-display-top-left">
+				    <div style = "width:100%">
+					    <img src = "{% static '/images/Yizhang Zhou.jpg' %}" style = "width:25%"  >
+					    <div class = "w3-container">
+						    <h4><b> Dr. Yizhang Zhou</b></h4>
+						    <p style="font-size: 20px">Email: yzhangz@uci.edu</p>
+					    </div>
+				    </div>
+			    </div>
+	</div>
+</body>

@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<head><title>Enrique Lavernia Lab at UC Irvine</title>
+
+<a name="Top">
+<div id="banner">
+	<div id="banner-content">
+		<a href="/" id= "sign" style="color: #2E5990;font-weight: bold;font-family: 'Raleway', sans-serif;  text-decoration: none;">Distinguished Professor Enrique Lavernia Research Group</a>
+	 	<a href="http://www.provost.uci.edu/about/"><img id="banner-image" href="/"
+	  	src="{% static '/images/provost_1.jpg' %}"></a>
+	  
+	</div>
+</div>
+<div id='cssmenu'>
+<ul>
+	<li class='active'><a href='/'><span>Home</span></a></li>
+	<li> <a href="/research"><span>Research</span></a></li>
+	<li><a href="/people"><span>People</span></a></li>
+	<li><a href="/publications"><span>Publications</span></a></li>
+	<li><a href="/gallery"><span>Gallery</span></a></li>
+	<li><a href="/contact"><span>Contact</span></a></li>
+</ul>
+</div>
+
+
+</html>

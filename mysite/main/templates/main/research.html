@@ -1,0 +1,146 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+{% include 'main/header.html' %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<body>
+	<!-- declare a w3 container- look it up for more reference -->
+	<div class="w3 container" style="margin-right: 200px; margin-left: 200px; margin: 0 auto;">
+		<!-- create a container within the container that has a white background -->
+		<div class ="w3-display-container w3-white" style="height: 100%; width: 100%; min-width: 480px; overflow: hidden;">
+			<!--display the picture on the top left of the container-->
+			<div class = "w3-display-top-left">
+				<!--display the picture at 100%-->
+				<div style="width: 100%;">
+					<!--insert picture, make it cover 25% of container-->
+					<img src = "{% static '/images/UnderConstruct.jpg' %}" style = "width: 25%">
+					<!--create another container for the project name-->
+					<div class="w3-container">
+						<!--Name of project-->
+						<H4><b>NSF DMREF: Engineering Strength and Thougness into Metals</b></H4>
+					</div>
+				</div>
+			</div>
+		<!--Display the info to thetop right-->
+		<div class="w3-display-topright" style="margin-left: 100px padding: 20px 20px 20px; white-space: nowrap; overflow: hidden;">
+			<!--Information aobut the project-->
+			<H3><b>Co Pls:</b> Julie M. Schoenung, Subhash Mahajan, UC Davis; Mo Li, Georgia Tech</H3>
+			<h3><b>Collaborators: </b>Dr. Irene Beyerlein, Los Alamos National Laboratory; Prof. Tim Rupert, UC Irvine</h3>
+			
+		</div>
+		<!--Brief summary of the project-->
+		<div class="w3-display-middle" style="margin-left: 70px; margin-top:10px; overflow: hidden;">
+		<ul>
+			<li style="font-size: 20px;">Solving the long-standing problem of strengthening and toughening in HCP polycrystalline metals via a novel concept of “twin mesh engineering.”</li>
+			<li style="font-size: 20px;">A synergistic experimental-modelling approach aims to understand, (1) Nucleation and growth of twins, (2) Interactions between slip and twinning, and (3) Twin-twin interactions </li>
+		</ul>
+		</div>
+	<!--end of project-->
+	</div>
+	<!--begin another project-->
+	<!-- declare a w3 container- look it up for more reference -->
+	<div class="w3 container" style="margin-right: 200px; margin-left: 200px; margin: 0 auto;">
+		<!-- create a container within the container that has a white background -->
+		<div class ="w3-display-container w3-white" style="height: 100%; width: 100%; min-width: 480px; overflow: hidden;">
+			<!--display the picture on the top left of the container-->
+			<div class = "w3-display-top-left">
+				<!--display the picture at 100%-->
+				<div style="width: 100%;">
+					<!--insert picture, make it cover 25% of container-->
+					<img src = "{% static '/images/UnderConstruct.jpg' %}" style = "width: 25%">
+					<!--create another container for the project name-->
+					<div class="w3-container">
+						<!--Name of project-->
+						<H4><b>NSF GOALI: Influence of Length-Scale on Diffusion during FAST (Field-Assisted Sintering Technology)</b></H4>
+					</div>
+				</div>
+			</div>
+		<!--Display the info to thetop right-->
+		<div class="w3-display-topright" style="margin-right: 265px; padding: 20px 20px 20px; white-space: nowrap; overflow: hidden;">
+			<!--Information about the project-->
+			<H3><b>Co Pls:</b> Dr. Anil Sachdev, Global R&D, General Motors</H3>
+			<h3><b>Collaborators: </b>Prof. Kaustubh Kulkarni, Indian Institute of Technology</h3>
+		</div>
+		<!--Brief summary of the project-->
+		<div class="w3-display-middle" style="margin-left: 60px; margin-top:-35px; overflow: hidden;">
+		<ul>
+			<li style="font-size: 20px">Supports fundamental research on the influence of length-scale on diffusion phenomena during SPS sintering of Ti and Ti alloys powders for novel materials </li>
+			
+		</ul>
+		</div>
+	<!--End of Project-->	
+	</div>
+		</div>
+	<!--begin another project-->
+	<!-- declare a w3 container- look it up for more reference -->
+	<div class="w3 container" style="margin-right: 200px; margin-left: 200px; margin: 0 auto;" >
+		<!-- create a container within the container that has a white background -->
+		<div class ="w3-display-container w3-white" style="height: 100%; width: 100%; min-width: 480px; overflow: hidden;">
+			<!--display the picture on the top left of the container-->
+			<div class = "w3-display-top-left">
+				<!--display the picture at 100%-->
+				<div style="width: 100%;">
+					<!--insert picture, make it cover 25% of container-->
+					<img src = "{% static '/images/UnderConstruct.jpg' %}" style = "width: 25%">
+					<!--create another container for the project name-->
+					<div class="w3-container">
+						<!--Name of project-->
+						<H4><b>ARO:Nanostructured High Entropy Alloys</b></H4>
+					</div>
+				</div>
+			</div>
+		<!--Display the info to thetop right-->
+		<div class="w3-display-topright" style="margin-right: 265px; padding: 20px 20px 20px; white-space: nowrap; overflow: hidden;">
+			<!--Information about the project-->
+			<h3><b>Collaborators: </b>Prof. Horst Hahn, Karlsruhe Institute of Technology, </h3>
+			<h3>Prof. Weiping Chen, South China University of Technology;</h3>
+			<h3> Profs. Fei Chen  and Lianmeng Zhang, Wuhan University of Technology</h3>
+			
+		</div>
+		<!--Brief summary of the project-->
+		<div class="w3-display-middle" style="margin-left: 50px; margin-top:40px; overflow: hidden;">
+		<ul>
+			<li style="font-size: 20px;">Fundamental investigation into the technological issues and scientific phenomena in nanostructured HEAs</li>
+			<li style="font-size: 20px;">Explore design principles that can ultimately be used to produce engineered phases and microstructures to attain strength and ductility values that exceed conventional alloys</li>
+			
+		</ul>
+		</div>
+	<!--End of Project-->	
+	</div>
+			</div>
+	<!--begin another project-->
+	<!-- declare a w3 container- look it up for more reference -->
+	<div class="w3 container" style="margin-right: 200px; margin-left: 200px; margin: 0 auto;">
+		<!-- create a container within the container that has a white background -->
+		<div class ="w3-display-container w3-white" style="height: 100%; width: 100%; min-width: 480px;">
+			<!--display the picture on the top left of the container-->
+			<div class = "w3-display-top-left">
+				<!--display the picture at 100%-->
+				<div style="width: 100%;">
+					<!--insert picture, make it cover 25% of container-->
+					<img src = "{% static '/images/UnderConstruct.jpg' %}" style = "width: 25%">
+					<!--create another container for the project name-->
+					<div class="w3-container">
+						<!--Name of project-->
+						<H4><b>Sandia National Laboratories: Novel Synthesis and Processing of Bulk Nanocrystalline Iron Nitride(Fe N)</b></H4>
+					</div>
+				</div>
+			</div>
+		
+		<!--Brief summary of the project-->
+		<div class="w3-display-middle" style="margin-left: 50px; margin-top:-70px;">
+		<ul>
+			<li style="font-size: 20px;">Investigating the synthesis of bulk nanocrystalline FeN magnetic material using mechanical alloying followed by field-assisted sintering technology</li>
+			<li style="font-size: 20px;">Establish an understanding of FeN processing and microstructure relationship</li>
+			
+		</ul>
+		</div>
+	<!--End of Project-->	
+	</div>
+
+</html>
