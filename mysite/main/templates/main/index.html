@@ -1,60 +1,33 @@
 ﻿{% load staticfiles %}
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 <head><title>Enrique Lavernia Lab at UC Irvine</title></head>
 {% include 'main/header.html' %}
-
 <body>
-	<div class="w3-content w3-section" style = "max-width: 800px">
-		
-		<img class= "slides" src="{% static '/images/Researchcapabilities.png' %}" style = "width: 100%">
-		<img class= "slides" src="{% static '/images/Cryomilling.png' %}" style = "width: 100%">
-		<img class= "slides" src="{% static '/images/consolidation.png' %}" style = "width: 100%">
-		<img class= "slides" src="{% static '/images/additivemanufacturing.png' %}" style = "width: 100%">
+	<div class="wrapper">
+		<div class="container">
+			<ul class="row" >
+				<li class="col-lg-2 col-md-2 col-sm-3 col-sm-3 col-xs-4" style="margin-right: 150px;"><a href="research#project"><img src = "{% static '/images/placeholder.png' %}"></a></li>
+
+				<li class="col-lg-2 col-md-2 col-sm-3 col-sm-3 col-xs-4"><img src = "{% static '/images/placeholder.png' %}"></li>
+
+			</ul>
+			<ul class="row">
+				
+				<li class="col-lg-2 col-md-2 col-sm-3 col-sm-3 col-xs-4" style="margin-right: 150px;"><a href="people#baolong"><img src = "{% static '/images/placeholder.png' %}"></a></li>
+				
+				<li class="col-lg-2 col-md-2 col-sm-3 col-sm-3 col-xs-4"><img src = "{% static '/images/placeholder.png' %}"></li>
+			</ul>
+		</div>
 	</div>
-	
 
-	<script> 
-	var slideIndex = 0;
-	carousel();
-
-	function carousel()
-	{
-		var i;
-		var x = document.getElementsByClassName("slides");
-		for(i = 0; i < x.length; i++)
-		{
-			x[i].style.display = 'none';
-		}
-		slideIndex++;
-		if(slideIndex > x.length)
-		{
-			slideIndex=1;
-		}
-		x[slideIndex-1].style.display = "block";
-		setTimeout(carousel, 5000);//change every five seconds
-
-	}
-
-	</script>
-
-<p id="name">
-<br>
-<br>
-<br>
-<br>
-<div>
-<header><h1 id= "header">About</h1></header>
-<p id = "intro">Metallurgy is the principle study of the Lavernia research group. Research interests include the synthesis and behavior of nanostructured and multi-scale materials with particular emphasis on processing fundamentals and physical behavior; thermal spray processing of nanostructured materials; spray atomization and deposition of structural materials; high temperature-high pressure atomization processes; and mathematical modeling of advanced materials and processes. Visit the research page for more information on current projects.</p>
-<br>
-
-</ul>
-</p>
-</div>
 </body>
 </html>

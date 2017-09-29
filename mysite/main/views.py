@@ -45,3 +45,7 @@ class ContactView(TemplateView):
     template_name = 'main/contact.html'
     def post(self, request, *args, **kwargs):
         render(request, template, {})
+class PublicationsView(TemplateView):
+    template_name='main/publications.html'
+    def post(self, request, *args, **kwargs):
+        render(request, template, {})

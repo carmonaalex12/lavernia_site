@@ -1,33 +1,25 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+{% include 'main/header.html' %}
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
 
-<head><title>Enrique Lavernia Lab at UC Irvine</title></head>
-
-{% include 'main/header.html' %}
 <body>
 	<div class="wrapper">
-		<div class="container" style="margin-bottom: 10px;">
-			For More Information; Contact:
+		<div class="container">
+			<ul>
+				<li>List of Pulibcations should go here, maybe acompanied with a link</li>
+				<li>Another publication</li>
+				<li>Another publication</li>
+			</ul>
 		</div>
 		
-			    <div class = "w3-display-top-left">
-				    <div style = "width:100%;">
-					    	<img src = "{% static '/images/Yizhang Zhou.jpg' %}" class="rounded" style = "width:55%; margin-top: 10px;"  >
-					    <div class = "w3-container">
-						    <h4><b> Dr. Yizhang Zhou</b></h4>
-						    	<p style="font-size: 20px">Email: yzhangz@uci.edu</p>
-					    </div>
-				    </div>	   
-				</div>
-			</div>
-
-		</div>
-</div>
+	</div>
 </body>

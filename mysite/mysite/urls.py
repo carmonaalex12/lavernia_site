@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^people/$',views.PeopleView.as_view()),
     url(r'^research/$',views.ResearchView.as_view()),
     url(r'^contact/$',views.ContactView.as_view()),
+    url(r'^publications/$',views.PublicationsView.as_view()),
 ]

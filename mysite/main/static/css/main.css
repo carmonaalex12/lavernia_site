@@ -9,7 +9,16 @@ sub{
 }
 body{
 	font-family: Tahoma;
+	padding:0;
+	margin: 0;
 
+
+	}
+div
+{
+	width: 100%;
+	height: 100%;
+	
 }
 h1{
 	font-size: 36px;
@@ -29,7 +38,7 @@ a:hover{
 }
 body{
 	font-family: Tahoma;
-	background-color: #F7F5E6;
+	background-color: #333A56;
 
 }
 body p
@@ -40,22 +49,33 @@ body ul li
 {
 	color: #333A56;
 }
+ul
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+ul li
+{
+	list-style: none;
+	margin-bottom: 25px;
+	margin-right: 40px;
+	margin-left: 80px;
+	margin-top: 25px;
+
+
+}
+ul li img
+{
+	cursor: pointer;
+}
 
 .name_link
 {
 	text-decoration:  none;
 
-	
-}
-#sign
-{
-	left: 290px;
-	position: relative;
-	top:-10px;
-	text-align: right-justify;
-	font-size: 25px;
 
 }
+
 #banner
 {
 	position: absolute;
@@ -78,15 +98,15 @@ body ul li
 	font-size: 36px;
 	font-family: Georgia;
 	font-weight: lighter;
-	
+
 }
 #banner-image
 {
 
 	float: right;
 	position: relative;
-	top: -184px;
-	right:90px;
+	top: -22px;
+	right:-190px;
 	padding: 0px;
 	height : 205px;
 	width: 300px;
@@ -96,17 +116,25 @@ body ul li
 {
 	float: right;
 	position: relative;
-	top: -300px;
-	right: -1120px;
+	top:-175px;
+	right: -870px;
 	padding: 0px;
-	height: 200px;
-	
+
+
+}
+#banner-image3
+{
+	float: right;
+	position: relative;
+	top:-320px;
+	left:1150px;
+	height: 100%;
 }
 #cssmenu
 {
     z-index: 0;
 	width: 100%;
-	min-width: 960px;
+	min-width: 970px;
 	display: block;
 	padding: 0;
 	margin: 0;
@@ -114,10 +142,10 @@ body ul li
 	border-radius: 5px;
 	margin-top:203px;
 	background-color: #333A56;
-	
+
 
 }
-#cssmenu > ul 
+#cssmenu > ul
 {
 	z-index: 0;
 	list-style-type: none;
@@ -280,17 +308,91 @@ body ul li
 	font-weight: bold;
 	font-size: 40px;
 }
-#intro
+#box
 {
-	text-align: center;
-	color: #2E5990;
+    width:700px;
+    padding:10px;
+    border: 1px solid;
+    border-color::#2E5990;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
 
-} 
+}
 .list-element
 {
 	text-align: center;
 	color: #2E5990;
 
 }
+.everything
+{
+    display:block;
+    margin:0 auto;
+}
+.container
+{
+    margin: 0 auto;
+    width: 960px;
+ 	
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+
+}
+.other
+{
+	margin:0 auto;
+	width:1000px;
+	background-color: #F7F5E6;
+
+}
+.wrapper
+{
+	margin: 0 auto;
+	width: 1250px;
+	background-color:#333A56;
+	padding: 20px 20px 20px 20px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.bio
+{
+	display: block;
+}
+.header-body
+{
+	background-color: #F7F5E6
+}
+
+
+@media (max-width: 479px)
+{
+    .w3 container
+    {
+        width:.8em;
+    }
+    .bio
+	{
+		font-size: .45em;
+
+	}
+	.name
+	{
+	    font-size: .8em;
+
+	}
+	.title
+	{
+	    font-size:.8em;
+	}
+	}
+	.w3-display-topmiddle
+	{
+		font-size: .8em;
+		white-space:nowrap;
+	}
+}
+
+
 
 
